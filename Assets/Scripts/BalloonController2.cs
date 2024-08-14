@@ -11,7 +11,6 @@ public class BalloonController2 : MonoBehaviour
     public float speed2=0;
     int score = 0;
     public TextMeshProUGUI ScoreText;
-    int score2 = 0;
     AudioSource AudioSource;
 
     private void Awake()
@@ -50,7 +49,7 @@ public class BalloonController2 : MonoBehaviour
 
     private void ResetPosition()
     {
-        float RandX = UnityEngine.Random.Range(-2.5f, 2.5f);
+        float RandX = UnityEngine.Random.Range(-2.05f, 2.05f);
 
         transform.position = new Vector2(RandX, -6f);
     }
